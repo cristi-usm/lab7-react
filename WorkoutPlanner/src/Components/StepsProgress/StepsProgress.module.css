@@ -1,16 +1,22 @@
 .container {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 2rem 1rem;
+  align-items: center;
+  padding: 2rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .stepWrapper {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex: 1;
   cursor: default;
 }
+
+.stepWrapper:last-child {
+  flex: 0 0 auto;
+}
+
 
 .clickable {
   cursor: pointer;
@@ -28,7 +34,6 @@
   flex: 1;
   height: 2px;
   background: #cecbf6;
-  margin-top: 20px;
   min-width: 20px;
 }
 

@@ -36,7 +36,7 @@ const StepFourReview = () => {
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Recenzie</h2>
+      <h2 className={styles.title}>Revizuire</h2>
 
       <div className={styles.card}>
         <p className={styles.sectionTitle}>Informații personale</p>
@@ -72,6 +72,7 @@ const StepFourReview = () => {
         </div>
       </div>
 
+      <p className={styles.sectionTitle}>Antrenamente</p>
       {workouts.map((wk) => (
         <div key={wk.id} className={styles.card}>
           <p className={styles.sectionTitle}>{wk.name}</p>

@@ -32,7 +32,13 @@ const StepOnePersonal = () => {
     const errors = {};
 
     if (!firstName) errors.firstName = "Prenumele este obligatoriu";
+    else if (firstName.length < 2) errors.firstName = "Prenumele trebuie să aibă minim 2 caractere";
+    else if (firstName.length > 50) errors.firstName = "Prenumele poate avea maxim 50 caractere";
+
     if (!lastName) errors.lastName = "Numele este obligatoriu";
+    else if (lastName.length < 2) errors.lastName = "Numele trebuie să aibă minim 2 caractere";
+    else if (lastName.length > 50) errors.lastName = "Numele poate avea maxim 50 caractere";
+
     if (!age) errors.age = "Vârsta este obligatorie";
     else if (age < 12 || age > 100) errors.age = "Vârsta trebuie să fie între 12 și 100 ani";
     if (!weight) errors.weight = "Greutatea este obligatorie";

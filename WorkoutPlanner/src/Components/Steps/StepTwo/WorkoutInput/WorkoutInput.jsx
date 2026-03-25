@@ -1,5 +1,8 @@
 import React from "react";
-import { useWorkoutDispatch, useWorkoutState } from "../../../Context/useWorkout";
+import {
+  useWorkoutDispatch,
+  useWorkoutState,
+} from "../../../Context/useWorkout";
 import styles from "../StepTwoWorkouts.module.css";
 import muscleGroups from "../../../../data/muscleGroups.json";
 import weekDays from "../../../../data/weekDays.json";
@@ -9,6 +12,26 @@ const WorkoutInput = ({ workout }) => {
   const { touched } = useWorkoutState();
 
   const touchedWorkout = touched.workouts[workout.id] || {};
+
+  const getErrors = () => {
+    const errors = {};
+
+    if (!workout.name) errors.name = "Numele este obligatoriu";
+    else if (workout.name.length < 2) errors.name = "Numele trebuie să aibă minim 2 caractere";
+    else if (workout.name.length > 50) errors.name = "Numele poate avea maxim 50 caractere";
+
+    if (!workout.day) errors.day = "Ziua este obligatorie";
+    if (!workout.muscleGroup) errors.muscleGroup = "Grupa musculară este obligatorie";
+
+    return errors;
+  };
+
+  const renderError = (field) => {
+    const errors = getErrors();
+    return touchedWorkout[field] && errors[field] ? (
+      <p className={styles.error}>{errors[field]}</p>
+    ) : null;
+  };
 
   const handleChange = (e) =>
     dispatch({
@@ -25,11 +48,6 @@ const WorkoutInput = ({ workout }) => {
   const handleRemove = () =>
     dispatch({ type: "removeWorkout", payload: { id: workout.id } });
 
-  const renderError = (field, message) =>
-    touchedWorkout[field] && !workout[field] ? (
-      <p className={styles.error}>{message}</p>
-    ) : null;
-
   return (
     <div className={styles.card}>
       <input
@@ -41,7 +59,7 @@ const WorkoutInput = ({ workout }) => {
         onBlur={handleBlur}
         className={styles.input}
       />
-      {renderError("name", "Numele este obligatoriu")}
+      {renderError("name")}
 
       <select
         name="day"
@@ -57,7 +75,7 @@ const WorkoutInput = ({ workout }) => {
           </option>
         ))}
       </select>
-      {renderError("day", "Ziua este obligatorie")}
+      {renderError("day")}
 
       <select
         name="muscleGroup"
@@ -73,7 +91,7 @@ const WorkoutInput = ({ workout }) => {
           </option>
         ))}
       </select>
-      {renderError("muscleGroup", "Grupa musculară este obligatorie")}
+      {renderError("muscleGroup")}
 
       <button onClick={handleRemove} className={styles.removeButton}>
         Șterge

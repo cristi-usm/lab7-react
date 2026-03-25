@@ -22,10 +22,18 @@ const ExercisesInput = ({ workoutId, name, day, muscleGroup }) => {
 
   const getErrors = () => {
     const errors = {};
+    
     if (!form.exercise) errors.exercise = "Selectează un exercițiu";
+    
     if (!form.sets) errors.sets = "Seturi obligatorii";
+    else if (form.sets < 1 || form.sets > 20) errors.sets = "Seturi între 1 și 20";
+    
     if (!form.reps) errors.reps = "Reps obligatorii";
+    else if (form.reps < 1 || form.reps > 100) errors.reps = "Reps între 1 și 100";
+    
     if (!form.weight) errors.weight = "Kg obligatorii";
+    else if (form.weight < 1 || form.weight > 500) errors.weight = "Greutate între 1 și 500 kg";
+
     return errors;
   };
 
@@ -38,7 +46,6 @@ const ExercisesInput = ({ workoutId, name, day, muscleGroup }) => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    if (value !== "" && Number(value) < 1) return;
     setForm((prev) => ({ ...prev, [name]: value }));
   };
 

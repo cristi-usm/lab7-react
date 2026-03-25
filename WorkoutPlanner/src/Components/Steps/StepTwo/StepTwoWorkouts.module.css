@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 2.5rem;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 1.25rem;
+  background: var(--color-background-primary);
+  border: 1.5px solid #AFA9EC;
+  border-radius: 16px;
+}
+
+.input {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1.5px solid #AFA9EC;
+  font-size: 15px;
+  background: #EEEDFE;
+  color: var(--color-text-primary);
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.input:focus {
+  border-color: #7F77DD;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(127, 119, 221, 0.15);
+}
+
+.input::placeholder {
+  color: #AFA9EC;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  background: #7F77DD;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.button:hover {
+  background: #534AB7;
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+.addButton {
+  width: 100%;
+  padding: 12px;
+  background: #EEEDFE;
+  color: #534AB7;
+  font-size: 15px;
+  font-weight: 500;
+  border: 1.5px dashed #AFA9EC;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.addButton:hover {
+  background: #CECBF6;
+  border-color: #7F77DD;
+}
+
+.removeButton {
+  align-self: flex-end;
+  padding: 6px 14px;
+  background: transparent;
+  color: #E24B4A;
+  font-size: 13px;
+  border: 1px solid #E24B4A;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.removeButton:hover {
+  background: #FCEBEB;
+}
+
+.buttonWrapper {
+  margin-top: 8px;
+}
+
+.hint {
+  font-size: 13px;
+  color: #E24B4A;
+  margin: 0;
+}
+
+.error { 
+    color: red;
+}

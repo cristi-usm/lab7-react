@@ -1,0 +1,6 @@
+[
+  { "id": 1, "label": "Informații personale" },
+  { "id": 2, "label": "Antrenamente" },
+  { "id": 3, "label": "Exerciții" },
+  { "id": 4, "label": "Revizuire" }
+]

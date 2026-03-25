@@ -1,0 +1,5 @@
+[
+  { "value": "male", "label": "Masculin" },
+  { "value": "female", "label": "Feminin" },
+  { "value": "prefer_not", "label": "Prefer să nu spun" }
+]

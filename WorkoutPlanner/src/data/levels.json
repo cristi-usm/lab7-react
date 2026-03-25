@@ -1,0 +1,5 @@
+[
+  { "value": "beginner", "label": "Începător" },
+  { "value": "intermediate", "label": "Intermediar" },
+  { "value": "advanced", "label": "Avansat" }
+]

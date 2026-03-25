@@ -1,0 +1,12 @@
+[
+  { "value": "chest", "label": "Piept" },
+  { "value": "back", "label": "Spate" },
+  { "value": "legs", "label": "Picioare" },
+  { "value": "shoulders", "label": "Umeri" },
+  { "value": "biceps", "label": "Biceps" },
+  { "value": "triceps", "label": "Triceps" },
+  { "value": "abs", "label": "Abdomen" },
+  { "value": "glutes", "label": "Fese" },
+  { "value": "full_body", "label": "Full Body" },
+  { "value": "cardio", "label": "Cardio" }
+]

@@ -1,0 +1,170 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 1.25rem;
+  background: var(--color-background-primary);
+  border: 1.5px solid #afa9ec;
+  border-radius: 16px;
+}
+
+.header {
+  padding-bottom: 12px;
+  border-bottom: 0.5px solid #cecbf6;
+}
+
+.name {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.meta {
+  font-size: 12px;
+  color: #7f77dd;
+}
+
+.select {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1.5px solid #afa9ec;
+  font-size: 14px;
+  background: #eeedfe;
+  color: var(--color-text-primary);
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.input {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1.5px solid #afa9ec;
+  font-size: 14px;
+  background: #eeedfe;
+  color: var(--color-text-primary);
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.input::placeholder {
+  color: #afa9ec;
+}
+
+.addButton {
+  width: 100%;
+  padding: 10px;
+  background: #eeedfe;
+  color: #534ab7;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1.5px dashed #afa9ec;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background: #cecbf6;
+  border-color: #7f77dd;
+}
+
+.exerciseRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 0.5px solid #eeedfe;
+}
+
+.exerciseRow:last-child {
+  border-bottom: none;
+}
+
+.exerciseName {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.exerciseMeta {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.editButton {
+  padding: 4px 10px;
+  font-size: 12px;
+  background: #eeedfe;
+  color: #534ab7;
+  border: 1px solid #afa9ec;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.removeButton {
+  padding: 4px 10px;
+  font-size: 12px;
+  background: transparent;
+  color: #e24b4a;
+  border: 1px solid #e24b4a;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.removeButton:hover {
+  background: #fcebeb;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  background: #7F77DD;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.button:hover {
+  background: #534AB7;
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}

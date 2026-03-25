@@ -1,0 +1,185 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 1.25rem;
+  background: #eeedfe;
+  border-radius: 20px;
+  border: 1.5px solid #afa9ec;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #cecbf6;
+  border-radius: var(--border-radius-lg);
+  padding: 1rem 1.25rem;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #eeedfe;
+  color: #534ab7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+.name {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.level {
+  font-size: 13px;
+  color: #7f77dd;
+  margin: 0;
+}
+
+.divider {
+  height: 0.5px;
+  background: var(--color-border-tertiary);
+  margin-bottom: 12px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stat span:first-child {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.stat span:last-child {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.sectionTitle {
+  font-size: 13px;
+  font-weight: 500;
+  color: #534ab7;
+  margin: 0 0 12px;
+  letter-spacing: 0.02em;
+}
+
+.workoutRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+}
+
+.workoutRow p {
+  font-size: 14px;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.workoutDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #7f77dd;
+  flex-shrink: 0;
+}
+
+.exerciseRow {
+  padding: 6px 0;
+  border-bottom: 0.5px solid var(--color-border-tertiary);
+}
+
+.exerciseRow:last-child {
+  border-bottom: none;
+}
+
+.exerciseName {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.exerciseMeta {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.accordionItem {
+  border-bottom: 0.5px solid #eeedfe;
+}
+
+.accordionItem:last-child {
+  border-bottom: none;
+}
+
+.accordionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.accordionName {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.accordionMeta {
+  font-size: 11px;
+  color: #7f77dd;
+}
+
+.accordionArrow {
+  font-size: 10px;
+  color: #afa9ec;
+}
+
+.accordionBody {
+  padding: 6px 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.goals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.goalTag {
+  background: #e0f0ff;
+  color: #1a6fb5;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}

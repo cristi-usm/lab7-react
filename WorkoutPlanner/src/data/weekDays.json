@@ -1,0 +1,9 @@
+[
+  { "value": "monday", "label": "Luni" },
+  { "value": "tuesday", "label": "Marți" },
+  { "value": "wednesday", "label": "Miercuri" },
+  { "value": "thursday", "label": "Joi" },
+  { "value": "friday", "label": "Vineri" },
+  { "value": "saturday", "label": "Sâmbătă" },
+  { "value": "sunday", "label": "Duminică" }
+]

@@ -1,0 +1,91 @@
+{
+  "chest": [
+    { "value": "bench_press", "label": "Bench Press" },
+    { "value": "incline_bench_press", "label": "Incline Bench Press" },
+    { "value": "decline_bench_press", "label": "Decline Bench Press" },
+    { "value": "dumbbell_fly", "label": "Dumbbell Fly" },
+    { "value": "cable_crossover", "label": "Cable Crossover" },
+    { "value": "push_up", "label": "Push Up" },
+    { "value": "dips", "label": "Dips" }
+  ],
+  "back": [
+    { "value": "pull_up", "label": "Pull Up" },
+    { "value": "lat_pulldown", "label": "Lat Pulldown" },
+    { "value": "barbell_row", "label": "Barbell Row" },
+    { "value": "dumbbell_row", "label": "Dumbbell Row" },
+    { "value": "seated_cable_row", "label": "Seated Cable Row" },
+    { "value": "deadlift", "label": "Deadlift" },
+    { "value": "face_pull", "label": "Face Pull" }
+  ],
+  "legs": [
+    { "value": "squat", "label": "Squat" },
+    { "value": "leg_press", "label": "Leg Press" },
+    { "value": "lunges", "label": "Lunges" },
+    { "value": "leg_curl", "label": "Leg Curl" },
+    { "value": "leg_extension", "label": "Leg Extension" },
+    { "value": "calf_raise", "label": "Calf Raise" },
+    { "value": "romanian_deadlift", "label": "Romanian Deadlift" }
+  ],
+  "shoulders": [
+    { "value": "overhead_press", "label": "Overhead Press" },
+    { "value": "dumbbell_shoulder_press", "label": "Dumbbell Shoulder Press" },
+    { "value": "lateral_raise", "label": "Lateral Raise" },
+    { "value": "front_raise", "label": "Front Raise" },
+    { "value": "rear_delt_fly", "label": "Rear Delt Fly" },
+    { "value": "arnold_press", "label": "Arnold Press" },
+    { "value": "upright_row", "label": "Upright Row" }
+  ],
+  "biceps": [
+    { "value": "barbell_curl", "label": "Barbell Curl" },
+    { "value": "dumbbell_curl", "label": "Dumbbell Curl" },
+    { "value": "hammer_curl", "label": "Hammer Curl" },
+    { "value": "preacher_curl", "label": "Preacher Curl" },
+    { "value": "concentration_curl", "label": "Concentration Curl" },
+    { "value": "cable_curl", "label": "Cable Curl" }
+  ],
+  "triceps": [
+    { "value": "tricep_pushdown", "label": "Tricep Pushdown" },
+    { "value": "skull_crusher", "label": "Skull Crusher" },
+    {
+      "value": "overhead_tricep_extension",
+      "label": "Overhead Tricep Extension"
+    },
+    { "value": "close_grip_bench_press", "label": "Close Grip Bench Press" },
+    { "value": "tricep_dips", "label": "Tricep Dips" },
+    { "value": "cable_overhead_extension", "label": "Cable Overhead Extension" }
+  ],
+  "abs": [
+    { "value": "crunch", "label": "Crunch" },
+    { "value": "plank", "label": "Plank" },
+    { "value": "leg_raise", "label": "Leg Raise" },
+    { "value": "russian_twist", "label": "Russian Twist" },
+    { "value": "bicycle_crunch", "label": "Bicycle Crunch" },
+    { "value": "ab_rollout", "label": "Ab Rollout" },
+    { "value": "hanging_knee_raise", "label": "Hanging Knee Raise" }
+  ],
+  "glutes": [
+    { "value": "hip_thrust", "label": "Hip Thrust" },
+    { "value": "glute_bridge", "label": "Glute Bridge" },
+    { "value": "bulgarian_split_squat", "label": "Bulgarian Split Squat" },
+    { "value": "cable_kickback", "label": "Cable Kickback" },
+    { "value": "sumo_squat", "label": "Sumo Squat" },
+    { "value": "step_up", "label": "Step Up" }
+  ],
+  "full_body": [
+    { "value": "clean_and_jerk", "label": "Clean and Jerk" },
+    { "value": "snatch", "label": "Snatch" },
+    { "value": "thruster", "label": "Thruster" },
+    { "value": "burpee", "label": "Burpee" },
+    { "value": "kettlebell_swing", "label": "Kettlebell Swing" },
+    { "value": "turkish_get_up", "label": "Turkish Get Up" }
+  ],
+  "cardio": [
+    { "value": "running", "label": "Alergare" },
+    { "value": "cycling", "label": "Ciclism" },
+    { "value": "rowing", "label": "Rowing" },
+    { "value": "jump_rope", "label": "Sărituri cu coarda" },
+    { "value": "stair_climber", "label": "Stair Climber" },
+    { "value": "elliptical", "label": "Eliptică" },
+    { "value": "hiit", "label": "HIIT" }
+  ]
+}

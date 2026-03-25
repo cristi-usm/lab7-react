@@ -1,0 +1,7 @@
+[
+  { "value": "muscle", "label": "Creștere masă musculară" },
+  { "value": "fat_loss", "label": "Slăbit / Ardere grăsimi" },
+  { "value": "strength", "label": "Forță" },
+  { "value": "endurance", "label": "Rezistență" },
+  { "value": "maintenance", "label": "Menținere" }
+]

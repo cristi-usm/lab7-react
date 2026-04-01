@@ -1,0 +1,28 @@
+{
+  "protocols": [
+    { "id": 1, "type": "Wi-Fi" },
+    { "id": 2, "type": "Zigbee" },
+    { "id": 3, "type": "Z-Wave" }
+  ],
+
+  "sensors": [
+    { "id": 1, "type": "Temperature" },
+    { "id": 2, "type": "Humidity" },
+    { "id": 3, "type": "Smoke" }
+  ],
+
+  "colorScheme": [
+    { "id": 1, "type": "Dark" },
+    { "id": 2, "type": "Light" },
+    { "id": 3, "type": "Neon" }
+  ],
+
+  "houseType": [
+    { "id": 1, "type": "Apartament" },
+    { "id": 2, "type": "Condo" },
+    { "id": 3, "type": "Mansion" },
+    { "id": 4, "type": "Cottage" },
+    { "id": 5, "type": "Vila" },
+    { "id": 6, "type": "Theehouse" }
+  ]
+}

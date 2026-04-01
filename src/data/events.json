@@ -1,0 +1,8 @@
+[
+  { "value": "birthday", "label": "Birthday party" },
+  { "value": "wedding", "label": "Wedding" },
+  { "value": "graduation", "label": "Graduation" },
+  { "value": "corporate", "label": "Corporate event" },
+  { "value": "babyshower", "label": "Baby shower" },
+  { "value": "other", "label": "Other" }
+]

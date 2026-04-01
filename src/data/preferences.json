@@ -1,0 +1,10 @@
+[
+  { "value": "music", "label": "Live music" },
+  { "value": "dj", "label": "DJ" },
+  { "value": "catering", "label": "Catering" },
+  { "value": "vegan", "label": "Vegan menu" },
+  { "value": "decoration", "label": "Decorations" },
+  { "value": "photographer", "label": "Photographer" },
+  { "value": "photobooth", "label": "Photo booth" },
+  { "value": "fireworks", "label": "Fireworks" }
+]

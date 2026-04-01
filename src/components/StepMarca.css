@@ -1,0 +1,58 @@
+.step-marca-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 44px 24px;
+    animation: fadeUp .3s ease;
+}
+
+.marca-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.marca-card {
+    background: #141516;
+    border: 1px solid #222325;
+    border-radius: 10px;
+    padding: 22px 14px;
+    cursor: pointer;
+    text-align: center;
+    transition: all .18s;
+    transform: translateY(0);
+}
+
+.marca-card.sel {
+    border-color: #e8610a;
+}
+
+.marca-card:hover {
+    background: #1a1b1c;
+    transform: translateY(-2px);
+}
+
+.marca-flag {
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+.marca-name {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.marca-bar {
+    width: 28px;
+    height: 3px;
+    background: #222325;
+    margin: 10px auto 0;
+    border-radius: 2px;
+    transition: background .2s;
+}
+
+.marca-card.sel .marca-bar {
+    background: #e8610a;
+}

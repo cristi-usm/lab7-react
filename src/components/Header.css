@@ -1,0 +1,122 @@
+
+.header-container {
+    background: #111213;
+    border-bottom: 1px solid #222325;
+    padding: 0 28px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+/* Logo Section */
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-hexagon {
+    width: 26px;
+    height: 26px;
+    background: #e8610a;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    flex-shrink: 0;
+}
+
+.logo-text {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.text-orange { color: #e8610a; }
+
+.text-builder {
+    color: #5c5a56;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.stepper-container {
+    display: flex;
+    align-items: center;
+}
+
+.step-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 0 12px;
+    opacity: 0.3;
+    transition: opacity 0.2s ease;
+}
+
+.step-item.is-visible {
+    opacity: 1;
+}
+
+.step-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1.5px solid #2a2b2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    font-weight: 500;
+    color: #5c5a56;
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+}
+
+.step-circle.is-done {
+    background: #e8610a;
+    border-color: #e8610a;
+    color: #fff;
+}
+
+.step-circle.is-active {
+    border-color: #e8610a;
+    color: #e8610a;
+}
+.step-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #5c5a56;
+}
+
+.step-title.active { color: #e8e6e1; }
+.step-title.done { color: #9a9790; }
+
+.step-subtitle {
+    font-size: 10px;
+    color: #5c5a56;
+}
+
+.step-divider {
+    width: 20px;
+    height: 1px;
+    background: #222325;
+}
+
+
+.cart-info {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: #5c5a56;
+}
+
+.cart-info.has-items {
+    color: #e8610a;
+}

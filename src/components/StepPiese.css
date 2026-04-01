@@ -1,0 +1,285 @@
+.step-piese-container {
+    display: grid;
+    grid-template-columns: 1fr 310px;
+    min-height: calc(100vh - 56px);
+}
+
+.catalog-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-bar {
+    padding: 12px 22px;
+    border-bottom: 1px solid #222325;
+    background: #111213;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-info {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #9a9790;
+}
+
+.filter-info span {
+    color: #e8e6e1;
+}
+
+.filter-pills {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.cat-pill {
+    padding: 3px 10px;
+    border-radius: 2px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-family: 'Rajdhani', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.piese-grid {
+    padding: 16px 22px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 12px;
+    overflow-y: auto;
+    flex: 1;
+    align-content: start;
+}
+
+.piesa-card {
+    background: #141516;
+    border: 1px solid #222325;
+    border-radius: 6px;
+    padding: 13px 15px;
+    transition: border 0.2s;
+}
+
+.piesa-card.sel {
+    border-color: #e8610a;
+}
+
+.piesa-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.piesa-name {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.piesa-tag {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    border-radius: 2px;
+    flex-shrink: 0;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.piesa-desc {
+    font-size: 12px;
+    color: #9a9790;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.piesa-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.piesa-price {
+    font-family: 'DM Mono', monospace;
+    font-size: 16px;
+    color: #e8610a;
+    font-weight: 500;
+}
+
+.piesa-price span {
+    font-size: 10px;
+    color: #5c5a56;
+}
+
+.add-btn {
+    padding: 5px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all .15s;
+}
+
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    color: #5c5a56;
+    font-size: 13px;
+}
+
+.cart-sidebar {
+    border-left: 1px solid #222325;
+    background: #111213;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-header {
+    padding: 12px 16px;
+    border-bottom: 1px solid #222325;
+}
+
+.cart-header-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #9a9790;
+}
+
+.cart-items {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.empty-cart {
+    text-align: center;
+    padding: 40px 10px;
+    color: #3c3a36;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.cart-card {
+    background: #1c1d1f;
+    border: 1px solid #222325;
+    border-radius: 4px;
+    padding: 9px 11px;
+    animation: slideIn .2s ease;
+}
+
+.cart-card-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.qty-control {
+    display: flex;
+    align-items: center;
+    border: 1px solid #2a2b2e;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.qty-btn {
+    width: 22px;
+    height: 22px;
+    background: #242527;
+    border: none;
+    color: #9a9790;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .15s;
+}
+
+.qty-val {
+    width: 26px;
+    text-align: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    background: #1c1d1f;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #2a2b2e;
+    border-right: 1px solid #2a2b2e;
+}
+
+.cart-card-price {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: #e8610a;
+}
+
+.cart-footer {
+    border-top: 1px solid #222325;
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+}
+
+.summary-btn {
+    border-radius: 4px;
+    padding: 10px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 100%;
+    transition: background .15s;
+}
+
+.back-btn {
+    background: transparent;
+    border: 1px solid #2a2b2e;
+    border-radius: 4px;
+    color: #5c5a56;
+    padding: 7px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+}

@@ -1,0 +1,89 @@
+.ui-step-hdr {
+    margin-bottom: 6px;
+}
+
+.ui-step-nr {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: #e8610a;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.ui-step-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.ui-step-sub {
+    font-size: 13px;
+    color: #9a9790;
+    line-height: 1.6;
+}
+
+.ui-sec-lbl {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #5c5a56;
+    margin-bottom: 7px;
+    margin-top: 4px;
+}
+
+.ui-nav-container {
+    display: flex;
+    gap: 12px;
+    margin-top: 34px;
+}
+
+.btn-back {
+    flex: 1;
+    background: transparent;
+    border: 1px solid #2a2b2e;
+    border-radius: 4px;
+    color: #5c5a56;
+    padding: 12px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .15s;
+}
+
+.btn-back:hover {
+    border-color: #5c5a56;
+    color: #9a9790;
+}
+
+.btn-next {
+    flex: 2;
+    border-radius: 4px;
+    padding: 12px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background .15s;
+}
+
+.btn-next:not(:disabled) {
+    background: #e8610a;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-next:disabled {
+    background: #1c1d1f;
+    border: 1px solid #2a2b2e;
+    color: #3c3a36;
+    cursor: not-allowed;
+}

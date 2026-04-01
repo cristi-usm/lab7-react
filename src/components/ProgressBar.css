@@ -1,0 +1,58 @@
+.progress-container {
+    margin-bottom: 2rem;
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.progress-step-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #111;
+}
+
+.progress-percentage {
+    font-size: 13px;
+    font-weight: 500;
+    color: #111;
+}
+
+.progress-track {
+    width: 100%;
+    height: 6px;
+    background: #f0f0f0;
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #111;
+    border-radius: 99px;
+    transition: width 0.4s ease;
+}
+
+.progress-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.progress-dot-label {
+    font-size: 11px;
+    color: #bbb;
+    transition: color 0.3s;
+}
+
+.progress-dot-label.active {
+    color: #111;
+    font-weight: 500;
+}
+
+.progress-dot-label.done {
+    color: #888;
+}

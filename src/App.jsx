@@ -5,25 +5,27 @@ import Preferences from "./components/Preferences.jsx"
 import Preview from "./components/Preview.jsx"
 import Review from "./components/Review.jsx"
 import { useFormStateContext } from "./context/FormContext.jsx"
+import ProgressBar from "./components/ProgressBar.jsx"
 
 export default function App() {
-  const { step } = useFormStateContext()
+    const { step } = useFormStateContext()
 
-  return (
-    <div className="app">
-      <div className="app-header">
-        <h1>Start your own event!</h1>
-        <h2>Fill all necessary details</h2>
-      </div>
-      <div className="app-body">
-        <div className="form-panel">
-          {step === 1 && <Bio />}
-          {step === 2 && <EventDetails />}
-          {step === 3 && <Preferences />}
-          {step === 4 && <Review />}
+    return (
+        <div className="app">
+            <div className="app-header">
+                <h1>Start your own event!</h1>
+                <h2>Fill all necessary details</h2>
+            </div>
+            <div className="app-body">
+                <div className="form-panel">
+                    <ProgressBar step={step} />
+                    {step === 1 && <Bio />}
+                    {step === 2 && <EventDetails />}
+                    {step === 3 && <Preferences />}
+                    {step === 4 && <Review />}
+                </div>
+                {step !== 4 && <Preview />}
+            </div>
         </div>
-        <Preview />
-      </div>
-    </div>
-  )
+    )
 }

@@ -3,7 +3,7 @@ import "./Review.css"
 
 export default function Review() {
     const dispatch = useFormDispatchContext()
-    const { name, email, color, event, date, members, preferences, comments } = useFormStateContext()
+    const { name, email, color, event, date, members, preferences, comments, submitted } = useFormStateContext()
 
     const initials = name.value
         ? name.value.split(" ").map((w) => w[0]).join("").toUpperCase().slice(0, 2)
@@ -18,6 +18,22 @@ export default function Review() {
     const dayName = date.value
         ? new Date(date.value).toLocaleDateString("en-GB", { weekday: "long" })
         : ""
+
+    if (submitted) {
+        return (
+            <div className="success-container">
+                <div className="success-icon">✓</div>
+                <h2 className="success-title">You're all set!</h2>
+                <p className="success-sub">Your event has been registered successfully.</p>
+                <button
+                    className="reset-btn"
+                    onClick={() => dispatch({ type: "RESET" })}
+                >
+                    Start over
+                </button>
+            </div>
+        )
+    }
 
     return (
         <div className="review">
@@ -75,12 +91,20 @@ export default function Review() {
                 )}
             </div>
 
-            <button
-                className="reset-btn"
-                onClick={() => dispatch({ type: "RESET" })}
-            >
-                Reset
-            </button>
+            <div className="buttons-container">
+                <button
+                    className="reset-btn"
+                    onClick={() => dispatch({ type: "RESET" })}
+                >
+                    Reset
+                </button>
+                <button
+                    className="btn-next"
+                    onClick={() => dispatch({ type: "SUBMIT" })}
+                >
+                    Submit
+                </button>
+            </div>
         </div>
     )
 }

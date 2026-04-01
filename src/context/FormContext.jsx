@@ -12,7 +12,8 @@ const initialForm = {
     event: { value: "", touched: false },
     members: { value: 0, touched: false },
     preferences: { value: [], touched: false },
-    comments: { value: "", touched: false }
+    comments: { value: "", touched: false },
+    submitted: false
 }
 
 function formReducer(answers, action) {
@@ -70,6 +71,12 @@ function formReducer(answers, action) {
 
         default:
             return answers
+
+        case "SUBMIT":
+          return {
+              ...answers,
+              submitted: true
+        }
     }
 }
 

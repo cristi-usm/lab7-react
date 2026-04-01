@@ -1,0 +1,7 @@
+[
+  { "id": 1, "label": "Airport Transfer" },
+  { "id": 2, "label": "Breakfast Included" },
+  { "id": 3, "label": "Travel Insurance" },
+  { "id": 4, "label": "Guided Tours" },
+  { "id": 5, "label": "Hotel Upgrade" }
+]

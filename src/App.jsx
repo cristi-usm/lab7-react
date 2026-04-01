@@ -1,121 +1,97 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { FormProvider, useFormState, useFormDispatch } from './context/FormContext'
+import Stepper from './components/form/Stepper'
+import Step1Profile from './components/form/Step1Profile'
+import Step2Stats from './components/form/Step2Stats'
+import Step3Plans from './components/form/Step3Plans'
+import Step4Availability from './components/form/Step4Availability'
+import TeacherHero from './components/preview/TeacherHero'
+import TeacherPricing from './components/preview/TeacherPricing'
+import TeacherAvailability from './components/preview/TeacherAvailability'
+import Button from './components/ui/Button'
 
-function App() {
-  const [count, setCount] = useState(0)
+function Form() {
+  const { step, submitted } = useFormState()
+  const dispatch = useFormDispatch()
+
+  const next = () => dispatch({ type: 'SET_STEP', step: step + 1 })
+  const back = () => dispatch({ type: 'SET_STEP', step: step - 1 })
+
+  if (submitted) {
+    return (<>
+      <div className="top-12 flex flex-col gap-6 p-20">
+        <TeacherHero />
+        <TeacherPricing />
+        <TeacherAvailability />
+        <div>
+          <Button onClick={() => dispatch({ type: 'RESET' })}>Create Another Profile</Button>
+        </div>
+      </div>
+    </>
+    )
+  }
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12">
+        
+        {/* FORM SIDE */}
+        <div className="flex-1 bg-white p-8 rounded-2xl shadow-sm border border-gray-100 h-fit">
+          <Stepper step={step} />
 
-      <div className="ticks"></div>
+          <div className="min-h-[400px] mb-10">
+            {step === 0 && <Step1Profile />}
+            {step === 1 && <Step2Stats />}
+            {step === 2 && <Step3Plans />}
+            {step === 3 && <Step4Availability />}
+          </div>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+          <div className="flex justify-between items-center border-t pt-6">
+            <Button 
+              variant="secondary" 
+              onClick={back} 
+              disabled={step === 0}
+            >
+              ← Back
+            </Button>
+            
+            <div className="text-sm font-medium text-gray-400">
+              Step {step + 1} of 4
+            </div>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+            {step < 3 && (
+              <Button onClick={next}>
+                Next Step →
+              </Button>
+            )}
+
+            {step === 3 && (
+              <Button 
+                className="bg-green-600 text-white p-3 rounded-lg font-bold hover:bg-green-700 transition-colors shadow-lg"
+                onClick={() => dispatch({ type: 'SUBMIT' })}
+              >
+                Complete & Submit Profile
+              </Button>
+            )}
+          </div>
+        </div>
+
+        {/* PREVIEW */}
+        <div className="flex-1">
+          <div className="top-12 flex flex-col gap-6 sticky">
+            <TeacherHero />
+            <TeacherPricing />
+            <TeacherAvailability />
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }
 
-export default App
+export default function App() {
+  return (
+    <FormProvider>
+      <Form />
+    </FormProvider>
+  )
+}

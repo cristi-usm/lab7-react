@@ -1,0 +1,5 @@
+[
+  {"id": "session", "name": "Per Session"},
+  {"id": "course", "name": "Per Course"},
+  {"id": "subscription", "name": "Subscription"}
+]

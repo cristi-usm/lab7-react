@@ -1,0 +1,228 @@
+.app-shell {
+  max-width: 980px;
+  margin: 24px auto;
+  padding: 16px;
+}
+
+.subtitle {
+  margin-top: -8px;
+  color: #555;
+}
+
+.stepper-wrapper {
+  margin: 20px 0;
+}
+
+.stepper-progress-track {
+  width: 100%;
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.stepper-progress-fill {
+  height: 100%;
+  background: #2563eb;
+  transition: width 0.2s ease;
+}
+
+.stepper-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.stepper-item {
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+}
+
+.stepper-dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid #cbd5e1;
+  margin: 0 auto 6px;
+  display: grid;
+  place-items: center;
+  background: #fff;
+}
+
+.stepper-item.done .stepper-dot {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+}
+
+.stepper-item.current .stepper-dot {
+  border-color: #2563eb;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+}
+
+.form-panel,
+.preview-panel,
+.success-box {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.step-content h2 {
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.step-content label,
+.step-content fieldset {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.step-content input,
+.step-content select,
+.step-content textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 6px;
+  padding: 8px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.step-content fieldset {
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.inline-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.inline-option input {
+  width: auto;
+  margin-top: 0;
+}
+
+.range-line {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.range-line input {
+  flex: 1;
+}
+
+.range-line span {
+  width: 24px;
+  text-align: right;
+}
+
+.input-error,
+.input-error-fieldset {
+  border-color: #dc2626 !important;
+}
+
+.error-text {
+  color: #dc2626;
+  margin: 2px 0 10px;
+  font-size: 13px;
+}
+
+.preview-panel h3 {
+  margin-top: 0;
+}
+
+.preview-card {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  background: #f8fafc;
+}
+
+.preview-name {
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.preview-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.preview-column {
+  display: block;
+}
+
+.preview-column strong {
+  display: block;
+  margin-top: 4px;
+}
+
+.review-section {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.review-section h4 {
+  margin: 0 0 8px;
+}
+
+.review-section p {
+  margin: 4px 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+button {
+  padding: 8px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: #f8fafc;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.success-box {
+  max-width: 540px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .main-layout {
+    grid-template-columns: 1fr;
+  }
+}

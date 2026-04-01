@@ -1,0 +1,25 @@
+{
+  "stepLabels": ["Date personale", "Spatiu si buget", "Preferinte", "Review"],
+  "roomTypes": [
+    { "value": "separate-office", "label": "Birou separat" },
+    { "value": "living-corner", "label": "Colt in living" },
+    { "value": "bedroom-corner", "label": "Colt in dormitor" }
+  ],
+  "workModes": [
+    { "value": "focus", "label": "Focus intens" },
+    { "value": "hybrid", "label": "Sedinte + lucru individual" },
+    { "value": "creative", "label": "Lucru creativ" }
+  ],
+  "equipmentOptions": [
+    { "value": "desk", "label": "Birou reglabil" },
+    { "value": "chair", "label": "Scaun ergonomic" },
+    { "value": "lamp", "label": "Lampa de birou" },
+    { "value": "monitor", "label": "Monitor extern" },
+    { "value": "plants", "label": "Plante decorative" }
+  ],
+  "colorThemes": [
+    { "value": "light-wood", "label": "Lemn deschis" },
+    { "value": "white-minimal", "label": "Alb minimalist" },
+    { "value": "dark-industrial", "label": "Dark industrial" }
+  ]
+}

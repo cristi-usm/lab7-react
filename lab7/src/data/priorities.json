@@ -1,0 +1,26 @@
+[
+    {
+        "value": "scientific_research",
+        "label": "🔭 Scientific Research"
+    },
+    {
+        "value": "resource_extraction",
+        "label": "⛏️ Resource Extraction"
+    },
+    {
+        "value": "colonization",
+        "label": "🏗️ Colonization Survey"
+    },
+    {
+        "value": "alien_contact",
+        "label": "👽 First Contact Protocol"
+    },
+    {
+        "value": "defense_recon",
+        "label": "🛡️ Defense Reconnaissance"
+    },
+    {
+        "value": "rescue_op",
+        "label": "🆘 Rescue Operation"
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "value": "aurora",
+        "label": "Aurora-7",
+        "type": "Scout",
+        "crew": 2,
+        "speed": "28,000 km/h",
+        "icon": "🛸",
+        "description": "Lightweight exploration vessel"
+    },
+    {
+        "value": "helios",
+        "label": "Helios Prime",
+        "type": "Cruiser",
+        "crew": 6,
+        "speed": "35,000 km/h",
+        "icon": "🚀",
+        "description": "Heavy-duty long-range cruiser"
+    },
+    {
+        "value": "nova",
+        "label": "Nova Sentinel",
+        "type": "Stealth",
+        "crew": 4,
+        "speed": "42,000 km/h",
+        "icon": "🛰️",
+        "description": "Advanced stealth reconnaissance ship"
+    },
+    {
+        "value": "titan_class",
+        "label": "Titan-Class Hauler",
+        "type": "Cargo",
+        "crew": 8,
+        "speed": "22,000 km/h",
+        "icon": "🚛",
+        "description": "Massive cargo transport vessel"
+    }
+]

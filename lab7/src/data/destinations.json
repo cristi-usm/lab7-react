@@ -1,0 +1,44 @@
+[
+    {
+        "value": "moon",
+        "label": "🌕 The Moon",
+        "distance": "384,400 km",
+        "duration": "3 days",
+        "danger": 2
+    },
+    {
+        "value": "mars",
+        "label": "🔴 Mars",
+        "distance": "54.6M km",
+        "duration": "7 months",
+        "danger": 7
+    },
+    {
+        "value": "europa",
+        "label": "🌊 Europa (Jupiter's Moon)",
+        "distance": "628M km",
+        "duration": "6 years",
+        "danger": 9
+    },
+    {
+        "value": "titan",
+        "label": "🟠 Titan (Saturn's Moon)",
+        "distance": "1.2B km",
+        "duration": "7 years",
+        "danger": 8
+    },
+    {
+        "value": "asteroid_belt",
+        "label": "☄️ Asteroid Belt",
+        "distance": "329M km",
+        "duration": "3 years",
+        "danger": 6
+    },
+    {
+        "value": "venus",
+        "label": "🌋 Venus Orbit",
+        "distance": "41M km",
+        "duration": "5 months",
+        "danger": 5
+    }
+]

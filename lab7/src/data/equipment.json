@@ -1,0 +1,62 @@
+[
+    {
+        "value": "laser_drill",
+        "label": "⚡ Laser Drill",
+        "weight": 45,
+        "category": "science"
+    },
+    {
+        "value": "bio_scanner",
+        "label": "🧬 Bio Scanner",
+        "weight": 12,
+        "category": "science"
+    },
+    {
+        "value": "terraformer",
+        "label": "🌱 Terraforming Kit",
+        "weight": 200,
+        "category": "science"
+    },
+    {
+        "value": "deep_radar",
+        "label": "📡 Deep Radar Array",
+        "weight": 78,
+        "category": "science"
+    },
+    {
+        "value": "medpod",
+        "label": "💊 MedPod Unit",
+        "weight": 55,
+        "category": "medical"
+    },
+    {
+        "value": "cryo_bed",
+        "label": "❄️ Cryo Bed x4",
+        "weight": 320,
+        "category": "medical"
+    },
+    {
+        "value": "nano_repair",
+        "label": "🤖 Nano-Repair Drones",
+        "weight": 30,
+        "category": "repair"
+    },
+    {
+        "value": "shield_gen",
+        "label": "🛡️ Shield Generator",
+        "weight": 150,
+        "category": "defense"
+    },
+    {
+        "value": "plasma_cannon",
+        "label": "🔫 Plasma Cannon",
+        "weight": 95,
+        "category": "defense"
+    },
+    {
+        "value": "space_garden",
+        "label": "🌿 Hydroponic Garden",
+        "weight": 60,
+        "category": "survival"
+    }
+]

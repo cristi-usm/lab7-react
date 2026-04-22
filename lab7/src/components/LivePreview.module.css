@@ -1,0 +1,211 @@
+.preview {
+    width: 280px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    position: sticky;
+    top: 2rem;
+    align-self: flex-start;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 0.25rem;
+}
+
+.live {
+    font-size: 0.65rem;
+    font-family: var(--font-mono);
+    color: var(--accent);
+    animation: pulse 2s infinite;
+    letter-spacing: 0.05em;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+}
+
+.headerTitle {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+}
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.cardBanner {
+    background: linear-gradient(135deg, var(--accent-dim) 0%, transparent 100%);
+    padding: 1.25rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.missionCode {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--accent);
+    letter-spacing: 0.15em;
+    margin-bottom: 0.4rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.destBadge {
+    font-size: 0.85rem;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.astronautRow {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+    letter-spacing: 0.05em;
+}
+
+.astronautName {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text);
+}
+
+.astronautMeta {
+    font-size: 0.65rem;
+    color: var(--accent);
+    font-family: var(--font-mono);
+    letter-spacing: 0.08em;
+    margin-top: 0.15rem;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+
+.stat {
+    padding: 0.6rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+}
+
+.stat:nth-child(even) {
+    border-right: none;
+}
+
+.statLabel {
+    display: block;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    margin-bottom: 0.15rem;
+}
+
+.statValue {
+    font-size: 0.8rem;
+    color: var(--text);
+    font-weight: 500;
+}
+
+.statValue.danger {
+    color: #ff4d4d;
+}
+
+.readiness {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.readinessLabel {
+    font-size: 0.6rem;
+    font-family: var(--font-mono);
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+}
+
+.bar {
+    height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 0.3rem;
+}
+
+.barFill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 2px;
+    transition: width 0.5s ease;
+    box-shadow: 0 0 8px var(--glow);
+}
+
+.readinessPct {
+    font-size: 0.7rem;
+    color: var(--accent);
+    font-family: var(--font-mono);
+    text-align: right;
+}
+
+.tags {
+    padding: 0.75rem 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.tag {
+    font-size: 0.6rem;
+    padding: 0.2rem 0.5rem;
+    background: var(--accent-dim);
+    color: var(--accent);
+    border-radius: 3px;
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.65rem;
+    font-family: var(--font-mono);
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+}

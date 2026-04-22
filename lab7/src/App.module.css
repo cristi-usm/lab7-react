@@ -1,0 +1,136 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+}
+
+.header {
+  padding: 1.5rem 2rem 0.5rem;
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoIcon {
+  font-size: 1.4rem;
+}
+
+.logoText {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--text);
+  letter-spacing: 0.05em;
+}
+
+.logoAccent {
+  color: var(--accent);
+}
+
+.tagline {
+  font-size: 0.7rem;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.main {
+  display: flex;
+  gap: 2rem;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem 3rem;
+  flex: 1;
+  align-items: flex-start;
+}
+
+.formPanel {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.navButtons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.btnBack {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: 0.65rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  transition: all 0.2s;
+}
+
+.btnBack:hover {
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+.btnNext {
+  background: var(--accent);
+  border: none;
+  color: var(--bg);
+  padding: 0.65rem 1.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  transition: all 0.25s;
+  box-shadow: 0 0 15px var(--glow);
+}
+
+.btnNext:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 25px var(--glow);
+}
+
+.footer {
+  padding: 1rem 2rem;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.footerText {
+  font-size: 0.65rem;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+@media (max-width: 800px) {
+  .main {
+    flex-direction: column;
+    padding: 0 1rem 2rem;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 1rem;
+  }
+}

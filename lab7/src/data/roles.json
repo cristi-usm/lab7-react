@@ -1,0 +1,32 @@
+[
+    {
+        "value": "commander",
+        "label": "👨‍✈️ Mission Commander",
+        "description": "Lead the crew and make critical decisions"
+    },
+    {
+        "value": "pilot",
+        "label": "🧑‍🚀 Chief Pilot",
+        "description": "Navigate through deep space"
+    },
+    {
+        "value": "scientist",
+        "label": "🔬 Science Officer",
+        "description": "Conduct research and experiments"
+    },
+    {
+        "value": "engineer",
+        "label": "⚙️ Chief Engineer",
+        "description": "Maintain spacecraft systems"
+    },
+    {
+        "value": "medic",
+        "label": "🏥 Medical Officer",
+        "description": "Ensure crew health and safety"
+    },
+    {
+        "value": "specialist",
+        "label": "🎯 Mission Specialist",
+        "description": "Execute specialized mission objectives"
+    }
+]

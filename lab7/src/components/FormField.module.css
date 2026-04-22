@@ -1,0 +1,48 @@
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+}
+
+.hint {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    opacity: 0.6;
+}
+
+.error {
+    font-size: 0.72rem;
+    color: var(--danger);
+    font-family: var(--font-mono);
+    animation: shake 0.3s ease;
+}
+
+.hasError :global(input),
+.hasError :global(select),
+.hasError :global(textarea) {
+    border-color: var(--danger) !important;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-4px);
+    }
+
+    75% {
+        transform: translateX(4px);
+    }
+}

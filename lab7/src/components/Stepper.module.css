@@ -1,0 +1,108 @@
+.stepper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    padding: 2rem 1rem;
+    position: relative;
+}
+
+.stepWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    border: 2px solid var(--border);
+    background: var(--surface);
+    transition: all 0.3s ease;
+    color: var(--text-muted);
+}
+
+.label {
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    transition: color 0.3s;
+}
+
+.step.active .icon {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--bg);
+    box-shadow: 0 0 20px var(--glow);
+}
+
+.step.active .label {
+    color: var(--accent);
+}
+
+.step.done .icon {
+    background: var(--accent-dim);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.step.done .label {
+    color: var(--accent);
+}
+
+.step.done {
+    cursor: pointer;
+}
+
+.step.pending {
+    cursor: not-allowed;
+    opacity: 0.4;
+}
+
+.connector {
+    width: 60px;
+    height: 2px;
+    background: var(--border);
+    margin: 0 4px;
+    margin-bottom: 1.4rem;
+    transition: background 0.3s;
+}
+
+.connectorDone {
+    background: var(--accent);
+}
+
+@media (max-width: 600px) {
+    .connector {
+        width: 30px;
+    }
+
+    .icon {
+        width: 42px;
+        height: 42px;
+        font-size: 1rem;
+    }
+
+    .label {
+        font-size: 0.6rem;
+    }
+}

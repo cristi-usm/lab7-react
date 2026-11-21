@@ -1,0 +1,20 @@
+{
+  "destinations": [
+    { "id": "reykjavik", "label": "Reykjavik, Islanda", "tagline": "Lagune, ghețari și lumini nordice", "emoji": "❄️" },
+    { "id": "tromso", "label": "Tromsø, Norvegia", "tagline": "Fiorduri și aventuri arctice", "emoji": "🏔️" },
+    { "id": "lapland", "label": "Rovaniemi, Finlanda", "tagline": "Păduri albe și seri cozy", "emoji": "🌲" }
+  ],
+  "travelStyles": ["Explorator activ", "Slow travel", "Fotografie & natură", "Cultură locală"],
+  "activities": [
+    { "id": "aurora", "label": "Vânătoare de aurora", "icon": "✨" },
+    { "id": "snowmobile", "label": "Tur cu snowmobilul", "icon": "🏍️" },
+    { "id": "spa", "label": "Spa & lagună termală", "icon": "♨️" },
+    { "id": "hike", "label": "Drumeție pe ghețar", "icon": "🥾" },
+    { "id": "food", "label": "Degustare locală", "icon": "🍲" }
+  ],
+  "accommodations": [
+    { "id": "cabin", "label": "Căsuță nordică", "description": "Intimitate, lemn și vedere la pădure", "price": 145 },
+    { "id": "hotel", "label": "Boutique hotel", "description": "Confort central și mic dejun inclus", "price": 190 },
+    { "id": "igloo", "label": "Igloo de sticlă", "description": "Dormi sub cerul arctic", "price": 260 }
+  ]
+}
